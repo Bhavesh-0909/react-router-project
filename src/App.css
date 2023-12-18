@@ -11,7 +11,6 @@ body {
     width: 100vw;
 }
 .active{
-    background-color: rgba(244, 244, 244, 0.153);
-    border-radius: 5px;
+    border-radius: 0.375rem;
     border: 1px solid white;
 }
