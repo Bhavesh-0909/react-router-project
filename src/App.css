@@ -5,4 +5,13 @@
 html,
 body {
     overflow-x: hidden;
+    background: black;
+    color: white;
+    min-height: 100vh;
+    width: 100vw;
+}
+.active{
+    background-color: rgba(244, 244, 244, 0.153);
+    border-radius: 5px;
+    border: 1px solid white;
 }
