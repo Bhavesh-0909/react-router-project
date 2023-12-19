@@ -13,9 +13,9 @@ export const Navbar = (props) => {
     }
 
   return (
-    <div className='flex justify-evenly w-11/12 h-15 items-center'>
+    <div className='flex flex-wrap justify-between mx-auto w-11/12 h-15 items-center max-w-[1080px] gap-5 py-5'>
 
-        <Link to="/"><img src={logo} className='h-fit p-2 w-fit'/></Link>
+        <Link to="/"><img src={logo} className='h-11/12'/></Link>
         
         <ul className='flex justify-evenly gap-5'>
             <li><Link to="/">Home</Link></li>
@@ -24,16 +24,16 @@ export const Navbar = (props) => {
         </ul>
         <div className='flex justify-evenly gap-3'>
             { !IsLoggedIn &&
-                <NavLink to="/login"><button className='px-4 py-1 bg-gray-900 rounded-md'>login</button></NavLink>
+                <NavLink to="/login"><button className='px-4 py-1 bg-richblack-800 border border-richblack-700 text-center rounded-md'>login</button></NavLink>
             }
             { !IsLoggedIn &&
-                <NavLink to="/signup"><button className='px-4 py-1 bg-gray-900 rounded-md'>Sign up</button></NavLink>
+                <NavLink to="/signup"><button className='px-4 py-1 bg-richblack-800 border border-richblack-700 rounded-md'>Sign up</button></NavLink>
             }
             { IsLoggedIn &&
-                <NavLink to="/"><button onClick={logoutHandler} className='px-4 py-1 bg-gray-900 rounded-md'>Log out</button></NavLink>
+                <NavLink to="/"><button onClick={logoutHandler} className='px-4 py-1 bg-richblack-800 border border-richblack-700 rounded-md'>Log out</button></NavLink>
             }
             { IsLoggedIn &&
-                <NavLink to="/dashboard"><button className='px-4 py-1 bg-gray-900 rounded-md'>Dashboard</button></NavLink>
+                <NavLink to="/dashboard"><button className='px-4 py-1 bg-richblack-800 border border-richblack-700 rounded-md'>Dashboard</button></NavLink>
             }
             
         </div>
