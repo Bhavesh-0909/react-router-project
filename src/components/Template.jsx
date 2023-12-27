@@ -34,9 +34,9 @@ function Template(props) {
             className='flex justify-center items-center w-full gap-2 py-1 bg-richblack-800 border rounded-lg border-richblack-700 font-medium'
             ><FcGoogle size="19px"/><p>Sign up with Google</p></button>
         </div>
-        <div className='relative flex min-w-[450px]'>
-            <img src={image} className='relative w-11/12 h-[400px] z-10 aspect-square'/>
-            <img src={frame} className='absolute right-0 top-6 z-0 w-11/12 h-[400px] aspect-square'/>
+        <div className='relative flex w-[450px] mt-5'>
+            <img src={image} className='relative w-11/12 h-auto max-w-[400px] max-h-[400px] z-10 aspect-square'/>
+            <img src={frame} className='absolute right-0 top-6 z-0 w-11/12 h-auto max-w-[400px] max-h-[400px] aspect-square'/>
         </div>
         
     </div>
